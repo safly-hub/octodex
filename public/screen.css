@@ -5,45 +5,81 @@
 html {
   height: 100%;
 }
-
-body {
-  font-family: 'Roboto Slab', sans-serif;
-  margin: 0;
-  min-height: 100%;
-  background-color: #008aa0;
+header ul {
+  background-color: rgb(254, 254, 254);
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  align-items: center;
+  list-style-type: none;
 }
-section {
-  width: 80vw;
-  height: 100%;
-  background-color: #ddf2f3;
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.git {
+  display: none;
+}
+header li {
+  padding: 0.5em;
+
+  justify-content: space-between;
 }
 header {
-  display: inline-block;
-  justify-content: center;
+  box-shadow: lightgrey;
 }
 
-.top  {
-  background-color: #00C0D3;
+.bigimg {
+  border: solid lightgrey 0.1em;
+  border-radius: 1em;
+  margin: 1em;
+}
+.littleimg {
+  height: 2em;
+  width: 2em;
+  align-content: center;
+  padding: 1em;
+}
+
+main {
+  border-top: 1.5em solid lightgrey;
+}
+
+main,
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main ul {
+  justify-content: space-between;
+}
+
+main li {
   display: flex;
   justify-content: center;
-  padding: 8px;
+
+  list-style-type: none;
 }
-a {
-  margin: 8px;
-}
-article {
+@media screen and (min-width: 800px) {
+  .git {
+    display: block;
+  }
+  .bigimg {
+    height: 15em;
+    width: 15em;
+  }
+li {
   display: flex;
-  padding: 16px 24px;
 }
-article > div:first-child{
-  border: 1px solid red;
-  margin-right: 24px;
-}
-.bottom {
-  background-color: #d3d3d3;
-  display: flex;
-  justify-content: center;
-  padding: 8px;
 }
