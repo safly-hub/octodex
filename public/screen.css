@@ -80,6 +80,5 @@ main li {
     width: 15em;
   }
 li {
-  display: flex;
-}
+  display: flex-flow: wrap;
 }
